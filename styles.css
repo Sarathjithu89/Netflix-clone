@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: Helvetica, Bebas, Arial, sans-serif;
+}
+@font-face {
+  font-family: Bebas;
+  src: url(./Assets/Fonts/Bebas-Regular.otf);
+}
+
+/* Header section styles */
+header {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 1.5rem;
+}
+#lang-head {
+  border: 1px solid;
+  border-radius: 0.4rem;
+}
+#lang-head > option {
+  text-align: center;
+  align-items: center;
+}
+.Hero {
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0),
+      rgb(0, 0, 0)
+    ),
+    url(./Assets/Hero/Background.jpg);
+  background-size: contain;
+  height: 100dvh;
+  color: white;
+}
+.Hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  max-width: 500px;
+}
