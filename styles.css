@@ -1,39 +1,42 @@
 * {
   margin: 0;
   border: 0;
-  font-family: Helvetica, Bebas, Arial, sans-serif;
-}
-@font-face {
-  font-family: Bebas;
-  src: url(./Assets/Fonts/Bebas-Regular.otf);
+  font-family: Helvetica, sans-serif, "Bebas Neue";
 }
 
 /* Header section styles */
 header {
   /* border: 1px solid rgb(255, 255, 255); */
   position: absolute;
-  top: 1.5rem;
+  top: 1.4rem;
 }
 .selector {
   padding: 0.3rem 1rem;
-  border: white 1px solid;
+  border: rgba(128, 127, 127, 0.745) 1px solid;
   margin-right: 1rem;
-  background-color: rgba(33, 33, 33, 0.942);
+  background-color: rgba(20, 20, 20, 0.942);
+  height: 1.8rem;
 }
 .head-select {
-  background-color: rgba(33, 33, 33, 0.942);
+  background-color: rgba(20, 20, 20, 0.942);
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  outline: none;
+}
+.head-select > option {
+  text-align: center;
+  outline: none;
 }
 .signin {
   padding: 0.3rem 0.4rem;
   font-size: 0.9rem;
+  height: 1.8rem;
 }
 .Hero {
   background-image: radial-gradient(
       circle,
       rgba(255, 255, 255, 0),
-      rgb(0, 0, 0)
+      rgba(0, 0, 0, 0.79) 70%
     ),
     url(./Assets/Hero/Background.jpg);
   background-size: contain;
@@ -41,7 +44,20 @@ header {
   color: white;
 }
 .Hero h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  max-width: 500px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  max-width: 650px;
+}
+/* Email input */
+.email-section {
+  width: 40%;
+}
+.email-input {
+  height: 3.4rem;
+  width: 60%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+.email-btn {
+  height: 3.4rem;
 }
