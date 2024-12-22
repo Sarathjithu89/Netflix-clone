@@ -10,17 +10,24 @@
 
 /* Header section styles */
 header {
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
   position: absolute;
   top: 1.5rem;
 }
-#lang-head {
-  border: 1px solid;
-  border-radius: 0.4rem;
+.selector {
+  padding: 0.3rem 1rem;
+  border: white 1px solid;
+  margin-right: 1rem;
+  background-color: rgba(33, 33, 33, 0.942);
 }
-#lang-head > option {
+.head-select {
+  background-color: rgba(33, 33, 33, 0.942);
   text-align: center;
-  align-items: center;
+  font-size: 0.9rem;
+}
+.signin {
+  padding: 0.3rem 0.4rem;
+  font-size: 0.9rem;
 }
 .Hero {
   background-image: radial-gradient(
