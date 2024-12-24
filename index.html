@@ -59,39 +59,180 @@
       </div>
     </header>
     <!-- Header Section end -->
+
     <!-- Hero section start -->
     <section
-      class="Hero flex-column d-flex flex-wrap align-items-center justify-content-center"
+      class="Hero d-flex flex-wrap align-items-center justify-content-center"
     >
-      <h1
-        class="d-flex flex-wrap align-items-center justify-content-center text-center"
+      <div
+        class="container-fluid d-flex align-items-center justify-content-center flex-column hero-content"
       >
-        Unlimited movies, TV shows and more
-      </h1>
-      <h2>Starts at ₹149. Cancel at any time.</h2>
-      <p>Ready to watch? Enter your email to create or restart your membership.</p>
-      <div class="d-flex flex-wrap align-items-center justify-content-center">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email address"
-          class="rounded-1"
-        />
-        <button
-          type="button"
-          class="btn btn-danger rounded-1"
-          id="getStarted"
+        <h1
+          class="d-flex flex-wrap align-items-center justify-content-evenly text-center"
         >
-          Get Started <img src="./Assets/Icons/right-arrow-svgrepo-com.svg " alt="Right-arrow" />
+          Unlimited movies, TV shows and more
+        </h1>
+        <h2>Starts at ₹149. Cancel at any time.</h2>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div
+          class="d-flex flex-shrink align-items-center justify-content-evenly email-section"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            class="bg-black rounded-1 email-input"
+            required
+          />
+          <button
+            type="button"
+            class="d-flex btn btn-danger rounded-1 email-btn"
+            id="getStarted"
+          >
+            Get Started
+            <img
+              src="./Assets/Icons/right-arrow-svgrepo-com.svg"
+              alt="Right-arrow"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- Cards section start -->
+    <!-- cards section1 -->
+    <section class="container-fluid trending">
+      <h1>Trending Now</h1>
+      <select name="Place" id="place">
+        <option value="1">India</option>
+        <option value="2">Global</option>
+      </select>
+      <select name="type" id="type">
+        <option value="1">Movie</option>
+        <option value="2">TV Show</option>
+      </select>
+
+      <div class="d-flex cardone">
+        <button id="card-button">
+          <img
+            src="./Assets/Icons/left-arrow-svgrepo-com.svg"
+            alt="Left-arrow"
+            style="height: 20px"
+          />
         </button>
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img
+              src="./Assets/Cards1/Lucky_Baskhar_film_poster.jpg"
+              alt="Lucky basker"
+            />
+            <h1 class="rating">1</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/vicky vidya.avif" alt="vicky" />
+            <h1 class="rating">2</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/Amaran.avif" alt="" />
+            <h1 class="rating">3</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/Jigra.jpeg" alt="" />
+            <h1 class="rating">4</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/Thangalam.avif" alt="" />
+            <h1 class="rating">5</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/sikandar-ka-muqaddar.jpeg" alt="" />
+            <h1 class="rating">6</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/carryon.webp" alt="" />
+            <h1 class="rating">7</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/Devera.jpg" alt="" />
+            <h1 class="rating">8</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/That christmas.jpg" alt="" />
+            <h1 class="rating">9</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="card-body movie-card d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="./Assets/Cards1/mary.jpeg " alt="" />
+            <h1 class="rating">10</h1>
+          </div>
+        </div>
+
+        <button id="card-button2">
+          <img
+            src="./Assets/Icons/right-arrow-svgrepo-com.svg"
+            alt="Right-arrow"
+            style="height: 12px"
+          />
+        </button>
+      </div>
     </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    >
       crossorigin="anonymous"
-    ></script>
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

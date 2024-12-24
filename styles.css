@@ -32,21 +32,28 @@ header {
   font-size: 0.9rem;
   height: 1.8rem;
 }
+.hero-content {
+  padding-top: 5.5rem;
+}
+
 .Hero {
-  background-image: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.79) 70%
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./Assets/Hero/Background.jpg);
-  background-size: contain;
+  background-size: cover;
   height: 100dvh;
   color: white;
 }
 .Hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  max-width: 650px;
+  max-width: 750px;
+  padding: 1.1rem;
+}
+
+.Hero h2 {
+  font-size: 1.3rem;
+  padding: 1.2rem;
+  font-weight: 700;
 }
 /* Email input */
 .email-section {
@@ -54,10 +61,121 @@ header {
 }
 .email-input {
   height: 3.4rem;
-  width: 60%;
-  padding: 0.5rem 1rem;
+  width: 65%;
+  outline: 1px rgb(241, 240, 240);
+  border: 1px solid rgb(125, 125, 125);
+  color: white;
   box-sizing: border-box;
+  padding: 1em;
+  min-width: 200px;
+}
+.email-input:focus {
+  border: 2px solid rgb(255, 255, 255);
 }
 .email-btn {
   height: 3.4rem;
+  width: 30%;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  font-weight: 700;
+  border: 10px;
+  min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .email-section {
+    width: 80%;
+    flex-direction: column;
+  }
+  .email-input,
+  .email-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+/* Email section End */
+
+/* Cards section start*/
+
+/* Card section Trending  */
+.trending {
+  background-color: rgba(0, 0, 0, 0.942);
+  padding: 6rem;
+  color: white;
+}
+.trending h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.trending select {
+  padding: 0.3rem 1rem;
+  border: rgba(128, 127, 127, 0.745) 1px solid;
+  margin-right: 1rem;
+  background-color: rgba(20, 20, 20, 0.942);
+  height: 2.5rem;
+  color: white;
+  border-radius: 0.2rem;
+  align-items: center;
+  justify-content: center;
+}
+.trending select:focus {
+  border: 2px solid rgb(255, 255, 255);
+}
+.cards-1 {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 1rem;
+}
+.card {
+  margin: 20px;
+  background-size: cover;
+  border-radius: 0.5rem;
+  background-color: rgba(20, 20, 20, 0.942);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-width: 11rem;
+  height: 16rem;
+}
+.movie-card {
+  padding: 0px;
+}
+.movie-card h1 {
+  position: absolute;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+.cardone {
+  height: 20rem;
+  max-width: 100%;
+  overflow-x: scroll;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+.cardone::-webkit-scrollbar {
+  display: none;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease-in-out;
+}
+.cardone button {
+  height: 7rem;
+  background-color: rgb(31, 31, 31);
+  border-radius: 1rem;
+}
+.card h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  position: absolute;
+  left: -30px;
+  bottom: -10px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
